@@ -1,12 +1,5 @@
-module.exports.printStars = (starNr, word) => {
-    if(starNr == undefined && word == undefined){
-        console.log(`**********`)
-        console.log(`Hi`)
-        console.log(`**********`)
-    }
-    else {
+module.exports.printStars = (starNr = "10", word ="Hi") => {
         console.log("*".repeat(starNr))
         console.log(word)
         console.log("*".repeat(starNr))
-    }
 };
